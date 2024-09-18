@@ -58,26 +58,26 @@ Installation with Conda
 *Note: This guide has been written for and tested on Linux Ubuntu 18.04; however, given its dependence on Conda, it should be (easily) adaptable to other operative systems.*
 
 1. First, create a dedicated Python 3 virtual environment and activate it; note that  you can replace ``my_venv`` with another string (in all of the following commands) in order to give the virtual environment a custom name:
-    
+
     ```
-    $ conda create --name my_venv python=3
+    $ conda create --name my_venv python=3.8
     $ conda activate my_venv
     ```
 
 2. Install the Boost libraries through an Anaconda package:
-    
+
     ```
     $ conda install -c anaconda boost
     ```
 
 3. Clone into the ``psbody-mesh`` repository:
-    
+
     ```
     $ git clone https://github.com/MPI-IS/mesh
     ```
 
 4. Install the ``psbody-mesh`` package easily with ``pip``:
-    
+
     ```
     $ pip install --upgrade -r mesh/requirements.txt
     $ pip install --no-deps --install-option="--boost-location=$$BOOST_INCLUDE_DIRS" --verbose --no-cache-dir mesh/.
