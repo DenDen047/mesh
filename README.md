@@ -27,13 +27,14 @@ You can either create a dedicated Conda virtual environment and install [Boost f
 
 ```bash
 $ sudo apt-get install libboost-dev
+# the default BOOST_INCLUDE_DIRS path is /usr/include
 ```
 
 or on macOS
 
 ```bash
 $ brew install boost
-$ brew --prefix boost
+$ brew --prefix boost   # show BOOST_INCLUDE_DIRS path
 ```
 
 Installation
@@ -52,6 +53,7 @@ using the Makefile:
 ```bash
 $ BOOST_INCLUDE_DIRS=/path/to/boost/include make all
 ```
+
 
 Installation with Conda
 ------------
